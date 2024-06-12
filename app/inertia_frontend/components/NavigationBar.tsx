@@ -4,7 +4,7 @@ import { Link } from "@inertiajs/react";
 
 export const NavigationBar = () => (
   <div style={{ display: "flex", justifyContent: "flex-start", paddingTop: "30px", paddingBottom: "30px", width: "100%" }}>
-    <h2>Pokedex Example App</h2>
+    <h2>reNEW Seller Dashboard Demo</h2>
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>

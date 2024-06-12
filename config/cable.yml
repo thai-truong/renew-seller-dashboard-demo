@@ -8,4 +8,4 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: pokedex_app_with_inertia_production
+  channel_prefix: renew_seller_dashboard_demo_production

@@ -69,7 +69,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter = :resque
-  # config.active_job.queue_name_prefix = "pokedex_app_with_inertia_production"
+  # config.active_job.queue_name_prefix = "renew_seller_dashboard_demo_production"
 
   config.action_mailer.perform_caching = false
 

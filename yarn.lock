@@ -1546,9 +1546,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.796":
-  version: 1.4.798
-  resolution: "electron-to-chromium@npm:1.4.798"
-  checksum: 10c0/0941f9d9e28d7c26fd96a429126782c79811ea0b96f3dc8953cfef83b7f0d3856cbfe0ceb3fae9e619d49ddb990e2c3505147c663ac9cd8e8189c3d2da658edc
+  version: 1.4.799
+  resolution: "electron-to-chromium@npm:1.4.799"
+  checksum: 10c0/d347e48f8844f983ab91a7a20455013731e91dabe01286bc77f0b8ec5e1d3158aca2473da79209890d139bb3a166019147ffdb9f5c8fbf5564fbf416aaaf6ed8
   languageName: node
   linkType: hard
 
@@ -2511,33 +2511,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pokedex-app-with-inertia@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "pokedex-app-with-inertia@workspace:."
-  dependencies:
-    "@inertiajs/react": "npm:^1.1.0"
-    "@radix-ui/react-navigation-menu": "npm:^1.1.4"
-    "@radix-ui/react-separator": "npm:^1.0.3"
-    "@types/node": "npm:^20.14.2"
-    "@types/react": "npm:^18.3.3"
-    "@types/react-dom": "npm:^18.3.0"
-    "@vitejs/plugin-react": "npm:^4.3.1"
-    autoprefixer: "npm:^10.4.19"
-    class-variance-authority: "npm:^0.7.0"
-    clsx: "npm:^2.1.1"
-    lucide-react: "npm:^0.394.0"
-    postcss: "npm:^8.4.38"
-    react: "npm:^18.3.1"
-    react-dom: "npm:^18.3.1"
-    tailwind-merge: "npm:^2.3.0"
-    tailwindcss: "npm:^3.4.4"
-    tailwindcss-animate: "npm:^1.0.7"
-    typescript: "npm:^5.4.5"
-    vite: "npm:^5.2.13"
-    vite-plugin-ruby: "npm:^5.0.0"
-  languageName: unknown
-  linkType: soft
-
 "postcss-import@npm:^15.1.0":
   version: 15.1.0
   resolution: "postcss-import@npm:15.1.0"
@@ -2718,6 +2691,33 @@ __metadata:
   checksum: 10c0/1b16eb2c4bceb1665c89de70dcb64126a22bc8eb958feef3cd68fe11ac6d2a4899b5cd1b80b0774c7c03591dc57d16631a7f69d2daa2ec98100e2f29f7ec4cc4
   languageName: node
   linkType: hard
+
+"renew-seller-dashboard-demo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "renew-seller-dashboard-demo@workspace:."
+  dependencies:
+    "@inertiajs/react": "npm:^1.1.0"
+    "@radix-ui/react-navigation-menu": "npm:^1.1.4"
+    "@radix-ui/react-separator": "npm:^1.0.3"
+    "@types/node": "npm:^20.14.2"
+    "@types/react": "npm:^18.3.3"
+    "@types/react-dom": "npm:^18.3.0"
+    "@vitejs/plugin-react": "npm:^4.3.1"
+    autoprefixer: "npm:^10.4.19"
+    class-variance-authority: "npm:^0.7.0"
+    clsx: "npm:^2.1.1"
+    lucide-react: "npm:^0.394.0"
+    postcss: "npm:^8.4.38"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    tailwind-merge: "npm:^2.3.0"
+    tailwindcss: "npm:^3.4.4"
+    tailwindcss-animate: "npm:^1.0.7"
+    typescript: "npm:^5.4.5"
+    vite: "npm:^5.2.13"
+    vite-plugin-ruby: "npm:^5.0.0"
+  languageName: unknown
+  linkType: soft
 
 "resolve@npm:^1.1.7, resolve@npm:^1.22.2":
   version: 1.22.8

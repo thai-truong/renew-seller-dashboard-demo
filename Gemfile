@@ -38,7 +38,8 @@ gem "bootsnap", require: false
 # Custom gems
 gem "vite_rails"
 gem "inertia_rails"
-gem "poke-api-v2"
+gem "money-rails"
+gem "monetize", "1.12.0"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

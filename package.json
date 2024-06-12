@@ -1,5 +1,5 @@
 {
-  "name": "pokedex-app-with-inertia",
+  "name": "renew-seller-dashboard-demo",
   "version": "1.0.0",
   "scripts": {
     "build": "tsc && vite build"
