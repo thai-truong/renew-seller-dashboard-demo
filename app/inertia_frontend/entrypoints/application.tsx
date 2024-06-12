@@ -6,8 +6,8 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 
 createInertiaApp({
   resolve: (name: string) => {
-    const pages = import.meta.glob('../Pages/**/*.tsx', { eager: true })
-    return pages[`../Pages/${name}.tsx`]
+    const pages = import.meta.glob('../Pages/**/*.tsx');
+    return pages[`../Pages/${name}.tsx`]();
   },
   setup({ el, App, props }) {
     createRoot(el).render(

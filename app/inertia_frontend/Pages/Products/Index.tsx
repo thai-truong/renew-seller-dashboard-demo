@@ -14,8 +14,7 @@ type Props = {
 const Index = ({ products }: Props) => {
   return (
     <div>
-      <p>Hi there!</p>
-      {products.map(product => <p>{product.name}</p>)}
+      {products.map(product => <p key={product.id}>{product.name}</p>)}
     </div>
   )
 }
