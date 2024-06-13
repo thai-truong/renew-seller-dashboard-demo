@@ -9,8 +9,9 @@ class ProductSerializer
     {
       id: raw_product.id,
       name: raw_product.name,
+      sku: raw_product.sku,
       price: price_money.format(symbol: "#{price_money.currency.iso_code} ").strip,
-      image_url: raw_product.image_url
+      imageUrl: raw_product.image_url
     }
   end
 
