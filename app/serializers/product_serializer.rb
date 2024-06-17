@@ -12,7 +12,7 @@ class ProductSerializer
       sku: raw_product.sku,
       price: price_money.format(symbol: "#{price_money.currency.iso_code} ").strip,
       imageUrl: raw_product.image_url,
-      listed: ProductListing.find_by(shopify_product_id: raw_product.id).present?
+      productListingId: ProductListing.find_by(shopify_product_id: raw_product.id)&.id
     }
   end
 

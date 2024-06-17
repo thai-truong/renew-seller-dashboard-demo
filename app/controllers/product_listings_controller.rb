@@ -40,6 +40,12 @@ class ProductListingsController < ApplicationController
     end
   end
 
+  def show
+    render inertia: 'ProductListings/Show', props: {
+      productListing: ProductListingSerializer.new(ProductListing.find(params[:id])).serialize
+    }
+  end
+
   private
 
   def raw_products

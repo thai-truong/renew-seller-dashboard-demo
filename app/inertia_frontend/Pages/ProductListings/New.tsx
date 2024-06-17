@@ -34,6 +34,6 @@ const New = ({ product, listingPriceCurrency, conditions }: Props) => (
   </div>
 );
 
-New.layout = (page: ReactNode) => <DefaultLayout>{page}</DefaultLayout>;
+New.layout = (page: ReactNode) => <DefaultLayout><div className="self-stretch">{page}</div></DefaultLayout>;
 
 export default New;

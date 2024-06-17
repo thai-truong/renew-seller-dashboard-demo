@@ -27,7 +27,7 @@ export const columns: ColumnDef<Product>[] = [
   {
     accessorKey: "listed",
     header: "Listed",
-    cell: ({ row }) => row.original.listed ? <CheckIcon className="ml-3" /> : <Cross2Icon className="ml-3" />,
+    cell: ({ row }) => row.original.productListingId !== null ? <CheckIcon className="ml-3" /> : <Cross2Icon className="ml-3" />,
   },
   {
     id: "actions",
@@ -43,11 +43,18 @@ export const columns: ColumnDef<Product>[] = [
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
-            {!row.original.listed && (
+            {row.original.productListingId === null && (
               <DropdownMenuItem
                 onClick={() => router.get(`/product_listings/new?shopify_product_id=${row.original.id}`)}
               >
                 List product for sale
+              </DropdownMenuItem>
+            )}
+            {row.original.productListingId !== null && (
+              <DropdownMenuItem
+                onClick={() => router.get(`/product_listings/${row.original.productListingId}`)}
+              >
+                View product listing
               </DropdownMenuItem>
             )}
             <DropdownMenuItem>View product on Shopify</DropdownMenuItem>

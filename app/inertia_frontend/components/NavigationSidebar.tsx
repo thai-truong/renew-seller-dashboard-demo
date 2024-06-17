@@ -5,7 +5,6 @@ import { Link } from "@inertiajs/react";
 const NavigationSidebar = () => {
   const navigationTabs = [
     { name: "Products", link: "/" },
-    { name: "Listings", link: "/" },
   ];
 
   return (

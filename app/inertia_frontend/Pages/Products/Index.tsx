@@ -12,6 +12,6 @@ const Index = ({ products }: Props) => {
   return <DataTable columns={columns} data={products} columnToFilter="name" />
 }
 
-Index.layout = (page: ReactNode) => <DefaultLayout>{page}</DefaultLayout>
+Index.layout = (page: ReactNode) => <DefaultLayout><div className="self-stretch">{page}</div></DefaultLayout>
 
 export default Index;
