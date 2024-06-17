@@ -4,6 +4,8 @@ import { ColumnDef } from "@tanstack/react-table"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { MoreHorizontal } from "lucide-react";
+import { router } from '@inertiajs/react';
+import { CheckIcon, Cross2Icon } from "@radix-ui/react-icons";
 
 export const columns: ColumnDef<Product>[] = [
   { accessorKey: "name", header: "Name" },
@@ -23,9 +25,14 @@ export const columns: ColumnDef<Product>[] = [
     }
   },
   {
+    accessorKey: "listed",
+    header: "Listed",
+    cell: ({ row }) => row.original.listed ? <CheckIcon className="ml-3" /> : <Cross2Icon className="ml-3" />,
+  },
+  {
     id: "actions",
     header: "Actions",
-    cell: () => {
+    cell: ({ row }) => {
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -36,7 +43,13 @@ export const columns: ColumnDef<Product>[] = [
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
-            <DropdownMenuItem>List product</DropdownMenuItem>
+            {!row.original.listed && (
+              <DropdownMenuItem
+                onClick={() => router.get(`/product_listings/new?shopify_product_id=${row.original.id}`)}
+              >
+                List product for sale
+              </DropdownMenuItem>
+            )}
             <DropdownMenuItem>View product on Shopify</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

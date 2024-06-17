@@ -12,7 +12,7 @@ const NavigationSidebar = () => {
     <NavigationMenu className="border-r-2 max-w-full h-full items-start justify-start" orientation="vertical">
       <NavigationMenuList className="flex-col items-start min-w-0 max-w-full w-full space-x-0 pt-5">
         {navigationTabs.map(tab => (
-          <NavigationMenuItem className="py-2 pl-5">
+          <NavigationMenuItem key={tab.name} className="py-2 pl-5">
             <Link href={tab.link}>{tab.name}</Link>
           </NavigationMenuItem>
         ))}

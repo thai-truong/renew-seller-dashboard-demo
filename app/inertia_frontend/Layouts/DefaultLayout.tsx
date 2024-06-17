@@ -16,7 +16,7 @@ const DefaultLayout = ({ children }: Props) => (
         <NavigationSidebar />
       </div>
       <div style={{ width: "85%", display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "center" }}>
-        <div style={{ width: "80%", paddingTop: "30px", paddingBottom: "30px" }}>
+        <div style={{ width: "80%", minHeight: "100%", paddingTop: "30px", paddingBottom: "30px" }}>
           {children}
         </div>
       </div>
