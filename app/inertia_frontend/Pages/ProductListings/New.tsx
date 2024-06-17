@@ -2,7 +2,7 @@ import DefaultLayout from "@/Layouts/DefaultLayout";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Product } from "@/types";
 import React, { ReactNode } from "react";
-import ListingForm from "./ListingForm";
+import ListingForm from "./ListingForm/ListingForm";
 
 type Props = {
   product: Product;

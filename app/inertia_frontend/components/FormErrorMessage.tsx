@@ -9,4 +9,4 @@ const FormErrorMessage = ({ message }: Props) => (
   <p className="flex items-center gap-x-2 text-sm text-red-500 dark:text-red-900"><CrossCircledIcon /> {message}</p>
 );
 
-export default FormErrorMessage
+export default FormErrorMessage;
