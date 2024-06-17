@@ -4,6 +4,14 @@ export type Product = {
   sku: string;
   price: string;
   imageUrl: string;
-  listed: boolean;
+  productListingId: number | null;
 }
 
+export type ProductListing = {
+  id: number;
+  shopifyProductUrl: string;
+  listingPrice: string;
+  condition: string;
+  sellerNote: string | null;
+  imageUrls: string[];
+}

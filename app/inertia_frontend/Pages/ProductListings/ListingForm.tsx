@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Cross2Icon, UploadIcon } from "@radix-ui/react-icons";
 import FormErrorMessage from "@/components/FormErrorMessage";
 import Banner from "@/components/Banner";
+import { capitalize } from "@/lib/helpers/string";
 
 type Props = {
   listingPriceCurrency: string;
@@ -96,7 +97,7 @@ const SellerNoteTextAreaField = ({ control, formErrors }: InputFieldProps) => (
       <FormItem>
         <FormLabel>Note</FormLabel>
         <FormControl>
-          <Textarea className="resize-none" {...field} />
+          <Textarea className="resize-none min-h-[200px]" {...field} />
         </FormControl>
         <FormDescription>New buyers will be able to read this</FormDescription>
         {formErrors.sellerNote?.message && <FormErrorMessage message={formErrors.sellerNote.message} />}
@@ -130,7 +131,7 @@ const ListingForm = ({ listingPriceCurrency, conditions, shopifyProductId }: Pro
               {conditions.map(condition => (
                 <SelectItem
                   key={condition}
-                  value={condition}>{condition.charAt(0).toUpperCase() + condition.slice(1)}
+                  value={condition}>{capitalize(condition)}
                 </SelectItem>
               ))}
             </SelectContent>

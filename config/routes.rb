@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   root 'products#index'
 
   resources :products, only: [:index]
-  resources :product_listings, only: %i[new create]
+  resources :product_listings, only: %i[new create show]
 end
