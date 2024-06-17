@@ -4,5 +4,6 @@ export type Product = {
   sku: string;
   price: string;
   imageUrl: string;
+  listed: boolean;
 }
 
