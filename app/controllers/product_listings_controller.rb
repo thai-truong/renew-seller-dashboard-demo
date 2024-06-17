@@ -33,7 +33,7 @@ class ProductListingsController < ApplicationController
     product_listing.images.attach(images)
 
     if product_listing.save
-      redirect_to products_path
+      redirect_to product_listing_path(id: product_listing.id)
     else
       redirect_to new_product_listing_path(shopify_product_id: create_params[:shopify_product_id]),
                   inertia: { errors: product_listing.errors }
